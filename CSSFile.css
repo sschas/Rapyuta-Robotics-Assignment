@@ -1,0 +1,65 @@
+body{
+	background-color: white;
+}
+#taskDiv{
+	display: inline-block;
+    /* position: fixed; */
+    top: 30px;
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* width: 200px; */
+    /* height: 100px; */
+    /* margin: auto; */
+}
+#submitButton{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+#submitButton:hover{
+	background-color: #45a049;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px 12px 7px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#imageFrame{
+	padding-top:10px;
+    position:relative;
+	min-height:150px;
+	min-width:150px;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  z-index:9999;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position:fixed;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
